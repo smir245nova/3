@@ -1,50 +1,31 @@
 package web.model;
 
 public class Car {
-
-    private String model;
-    private String series;
+    public String model;
+    private String color;
     private int year;
+    private double price;
 
-    public Car() {
-    }
-
-    public Car(String model, String series, int year) {
+    public Car(String model, String color, int year, double price) {
         this.model = model;
-        this.series = series;
+        this.color = color;
         this.year = year;
+        this.price = price;
     }
 
     public String getModel() {
         return model;
     }
 
-    public void setModel(String model) {
-        this.model = model;
-    }
-
-    public String getSeries() {
-        return series;
-    }
-
-    public void setSeries(String series) {
-        this.series = series;
+    public String getColor() {
+        return color;
     }
 
     public int getYear() {
         return year;
     }
 
-    public void setYear(int year) {
-        this.year = year;
-    }
-
-    @Override
-    public String toString() {
-        return "Car{" +
-                "model='" + model + '\'' +
-                ", series='" + series + '\'' +
-                ", year=" + year +
-                '}';
+    public double getPrice() {
+        return price;
     }
 }
